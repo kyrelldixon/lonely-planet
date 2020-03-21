@@ -35,7 +35,7 @@ const mockDestinations = [
 export default () => {
   const [destinations] = useState(mockDestinations)
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row md:mb-12">
       {
         destinations.map(destination => <Card key={destination.city} destination={destination} />)
       }
