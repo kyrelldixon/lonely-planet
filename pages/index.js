@@ -104,7 +104,7 @@ export default () => (
         <button className="py-2 px-4 h-full shadow" type="button">Random</button>
       </div>
     </form>
-    <div class="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row">
       {
         destinations.map(destination => <Card key={destination.city} destination={destination} />)
       }
