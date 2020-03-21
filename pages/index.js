@@ -82,12 +82,12 @@ const customStyles = {
 }
 
 export default () => (
-  <article className="max-w-4xl mx-auto pt-32">
-    <div className="flex flex-col items-center mb-16">
+  <article className="max-w-4xl mx-auto md:pt-32">
+    <div className="hidden md:flex flex-col items-center mb-16">
       <h1 className="text-3xl text-center text-gray-800 mb-4 font-thin">Find the perfect destination</h1>
       <hr className="w-8 h-1 bg-red-700" />
     </div>
-    <form>
+    <form className="hidden md:block">
       <div className="flex items-end mb-4">
         <div className="flex flex-col flex-1">
           <label className="text-xs text-gray-500">Select Terrain</label>
@@ -104,7 +104,7 @@ export default () => (
         <button className="py-2 px-4 h-full shadow" type="button">Random</button>
       </div>
     </form>
-    <div class="flex">
+    <div class="flex flex-col md:flex-row">
       {
         destinations.map(destination => <Card key={destination.city} destination={destination} />)
       }
