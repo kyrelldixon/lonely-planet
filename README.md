@@ -1,55 +1,25 @@
-# Tailwind CSS example
+# Lonely Planet Destination Planner
 
-This is an example of using [Tailwind CSS](https://tailwindcss.com) in a Next.js project.
+This is an application is a UI (User Interface) based on a [Dribbble design](https://dribbble.com/shots/3244008-Lonely-Planet-HP-Destination-Selector) by [Claudio Guglieri](https://dribbble.com/claudioguglieri).
 
-## Deploy your own
+## Tools
 
-Deploy the example using [ZEIT Now](https://zeit.co/now):
+* [Next.js](https://nextjs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [react-select](https://react-select.com/home)
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/zeit/next.js/tree/canary/examples/with-tailwindcss)
+## Demo
 
-## How to use
+### Desktop Demo
 
-### Using `create-next-app`
+![Demo of destination planner desktop view](desktop-demo.gif)
 
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+### Mobile Demo
 
-```bash
-npm init next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+![Demo of destination planner mobile view](mobile-demo.gif)
 
-### Download manually
+## How to run
 
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-tailwindcss
-cd with-tailwindcss
-```
-
-Install it and run:
-
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
-
-Deploy it to the cloud with [ZEIT Now](https://zeit.co/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-## Notes
-
-This setup is a basic starting point for using [Tailwind CSS](https://tailwindcss.com) with Next.js. This example also includes the following [PostCSS](https://github.com/postcss/postcss) plugins:
-
-- [postcss-preset-env](https://preset-env.cssdb.org/) - Adds stage 2+ features and autoprefixes
-- [purgecss](https://github.com/FullHuman/purgecss) - Removes unused CSS
-
-## Limitations
-
-### Dynamically generated class strings will be purged
-
-Purgecss takes a very straightforward approach to removing unused CSS. It simply searches an entire file for a string that matches a regular expression. As a result, class strings that are dynamically created in a template using string concatenation will be considered unused and removed from your stylesheet. Tailwind CSS addresses this problem in more detail in [their documentation](https://tailwindcss.com/docs/controlling-file-size#writing-purgeable-html).
+1. Clone the repo
+2. Install `node_modules` by running `yarn` or `npm install`
+3. Start app by running `yarn dev` or `npm run dev`
