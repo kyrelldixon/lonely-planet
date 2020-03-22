@@ -24,7 +24,7 @@ const mockDestinations = [
     bgClass: 'bg-orange-500'
   },
   {
-    city: 'Riyadh',
+    city: 'Makkah',
     country: 'Saudi Arabia',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ullam odio aliquam?',
     backgroundImage: '/saudi-arabia.jpg',
